@@ -101,6 +101,7 @@ public class InterviewQuestions {
 
 
 
+
     public static void main(String[] args){
         InterviewQuestions interview = new InterviewQuestions();
         //String str = "tinder";
@@ -116,13 +117,14 @@ public class InterviewQuestions {
         //else
         //    System.out.print("No");
 
-        String w1 = "waterbottle";
+        /*String w1 = "waterbottle";
         String w2 = "erbottlewat";
         if(interview.isRotation(w1, w2)){
             System.out.println("Yes");
         }else{
             System.out.println("No");
         }
+        */
     }
 
 }
