@@ -35,6 +35,30 @@ public class BST {
         }
     }
 
+    void preorder(){
+        preorderTraversal(this.root);
+    }
+
+    void preorderTraversal(Node root){
+        if(root != null){
+            System.out.println(this.root.value);
+            preorderTraversal(this.root.left);
+            preorderTraversal(this.root.right);
+        }
+    }
+
+    void postorder(){
+        postorderTraversal(this.root);
+    }
+
+    void postorderTraversal(Node root){
+        if(root != null){
+            postorderTraversal(root.left);
+            postorderTraversal(root.right);
+            System.out.println(root.value);
+        }
+    }
+
     void deleteKey(int value){
         root = deleteRecursively(this.root, value);
     }
